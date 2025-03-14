@@ -1,8 +1,14 @@
 @import "tailwindcss";
 
+:root {
+  --background: #0a0a0a;
+  --foreground: #ffffff;
+  --radial: radial-gradient(circle at top, #1a1f36, #0d0f18);
+}
+
 body {
   overflow: overlay;
   user-select: none;
-  color: #ffffff;
-  background: #000000;
+  color: var(--foreground);
+  background: var(--background);
 }

@@ -15,7 +15,7 @@ export default function Home() {
   }, []);
 
   return (
-    <div>
+    <div className="bg-[image:var(--radial)]">
       <title>Cobalt</title>
       <div className="fixed left-1/2 transform -translate-x-1/2 w-[90%] flex justify-center mt-4 z-30">
         <Navbar />

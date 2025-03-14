@@ -78,7 +78,8 @@ export default function Home() {
       image: "/projects/cobalt.png",
       title: "Cobalt",
       description: "A feature rich Hypixel Skyblock QOL mod. With the intent of bringing a free and open source mod to the community.",
-      utilities: ["NextJS", "Tailwind", "CSS", "Java", "Kotlin", "Mixins"]
+      utilities: ["NextJS", "Tailwind", "CSS", "Java", "Kotlin", "Mixins"],
+      location: "/cobalt"
     }
   ];
 

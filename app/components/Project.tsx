@@ -1,16 +1,19 @@
 import Image from "next/image";
+import Link from "next/link";
 
 interface ProjectProps {
   image: string;
   title: string;
   description: string;
-  utilities: Array<string>
+  utilities: Array<string>;
+  location: string;
 }
 
-export default function Project({ image, title, description, utilities }: ProjectProps) {
+export default function Project({ image, title, description, utilities, location }: ProjectProps) {
   return (
-    <div 
+    <Link 
       className="bg-zinc-800/40 flex flex-row items-center p-4 rounded-lg w-full max-w-xl hover:shadow-lg transition-shadow duration-300 min-h-[128px]"
+      href={location}
     >  
       <div className="w-32 h-32 flex-shrink-0 mr-4">
         <Image
@@ -40,6 +43,6 @@ export default function Project({ image, title, description, utilities }: Projec
           </div>
         </div>
       </div>
-    </div>
+    </Link>
   );
 }
