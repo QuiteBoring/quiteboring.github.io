@@ -1,7 +1,6 @@
 "use client";
 
 import { useEffect, useRef, useState } from 'react';
-import mainStyles from "./main.module.css";
 import Project from './components/Project';
 
 export default function Home() {
