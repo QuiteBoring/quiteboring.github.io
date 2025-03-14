@@ -102,7 +102,7 @@ export default function Home() {
       <section
         id="home"
         ref={homeRef}
-        className={`${mainStyles.all} snap-start grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20`}
+        className="snap-start grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20"
       >
         <main className="flex flex-col gap-2 row-start-2 items-center sm:items-start">
           <h1 className="text-3xl text-red-50">Hi, I'm Nathan 👋</h1>
