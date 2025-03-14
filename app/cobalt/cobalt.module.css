@@ -1,11 +1,6 @@
-*:root {
-  --background: radial-gradient(circle at top, #1a1f36, #0d0f18);
-  --foreground: #ffffff;
-}
-
 body {
   overflow: overlay;
   user-select: none;
-  color: var(--foreground);
-  background: var(--background);
+  color: #ffffff;
+  background: radial-gradient(circle at top, #1a1f36, #0d0f18);
 }
