@@ -1,6 +1,6 @@
 "use client";
 
-import { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState, useCallback } from 'react'; 
 import Project from './components/Project';
 
 export default function Home() {
@@ -33,7 +33,7 @@ export default function Home() {
     };
   }, []);
 
-  const scrollToSection = (section: 0 | 1) => {
+  const scrollToSection = useCallback((section: 0 | 1) => {
     if (isScrolling) return;
     
     setIsScrolling(true);
@@ -41,7 +41,7 @@ export default function Home() {
     ref.current?.scrollIntoView({ behavior: 'smooth' });
     
     setTimeout(() => setIsScrolling(false), 300);
-  };
+  }, [isScrolling]); 
 
   useEffect(() => {
     const handleKeyPress = (e: KeyboardEvent) => {
@@ -55,7 +55,7 @@ export default function Home() {
 
     window.addEventListener('keydown', handleKeyPress);
     return () => window.removeEventListener('keydown', handleKeyPress);
-  }, [activeSection, isScrolling]);
+  }, [activeSection, isScrolling, scrollToSection]);
 
   const ArrowIcon = ({ direction }: { direction: 'up' | 'down' }) => (
     <svg
@@ -104,7 +104,7 @@ export default function Home() {
         className="snap-start grid grid-rows-[20px_1fr_20px] items-center justify-items-center min-h-screen p-8 pb-20 gap-16 sm:p-20"
       >
         <main className="flex flex-col gap-2 row-start-2 items-center sm:items-start">
-          <h1 className="text-3xl text-red-50">Hi, I'm Nathan 👋</h1>
+          <h1 className="text-3xl text-red-50">Hi, I&apos;m Nathan 👋</h1>
           <p className="text-sm text-gray-500">I do stupid shit and hope everything works out.</p>
         </main>
       </section>
@@ -143,4 +143,4 @@ export default function Home() {
       )}
     </div>
   );
-} 
+}
