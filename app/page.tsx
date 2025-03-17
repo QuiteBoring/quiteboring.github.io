@@ -2,7 +2,6 @@
 
 import { useEffect, useRef, useState, useCallback } from 'react'; 
 import Project from './components/Project';
-import Stars from './components/Stars';
 
 export default function Home() {
   const homeRef = useRef<HTMLDivElement>(null);
@@ -89,7 +88,6 @@ export default function Home() {
       ref={containerRef}
       className="h-screen overflow-y-scroll snap-y snap-mandatory scroll-smooth"
     >
-      <Stars />
       <title>QuiteBoring</title>
       {activeSection === 1 && (
         <button
