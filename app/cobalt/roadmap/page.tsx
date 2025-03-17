@@ -44,7 +44,7 @@ export default function Roadmap() {
   return (
     <div className="bg-[image:var(--radial)]">
       <title>Roadmap</title>
-      <div className="fixed left-1/2 transform -translate-x-1/2 w-[90%] flex justify-center mt-4 z-30">
+      <div className="fixed left-1/2 transform -translate-x-1/2 w-full flex justify-center z-30">
         <Navbar />
       </div>
 

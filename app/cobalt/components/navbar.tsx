@@ -10,7 +10,7 @@ export default function Navbar() {
   const closeMenu = () => setIsMenuOpen(false);
 
   return (
-    <nav className="fixed top-0 left-0 right-0 z-50 w-full p-3.5 bg-slate-800/40 border-b border-slate-900/25 flex justify-between items-center backdrop-blur-sm">
+    <nav className="fixed top-0 left-0 right-0 z-50 w-full pt-4.5 p-3.5 bg-slate-800 border-b border-slate-900 flex justify-between items-center backdrop-blur-sm">
       <Link className="text-sm ml-3 sm:ml-5 font-medium text-white" href="/cobalt">
         C O B A L T
       </Link>
@@ -69,14 +69,14 @@ export default function Navbar() {
       </div>
 
       <div
-        className={`fixed top-0 left-0 right-0 w-full md:hidden bg-slate-800/40 backdrop-blur-sm border-b border-slate-900/25 shadow-xl transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 w-full md:hidden bg-slate-800 backdrop-blur-sm border-b border-slate-900/25 shadow-xl transition-all duration-300 ${
           isMenuOpen
             ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-full"
         }`}
-        style={{ marginTop: "56px" }} // Adjust this value based on your navbar height
+        style={{ marginTop: "56px" }} 
       >
-        <div className="flex flex-col p-4 space-y-3">
+        <div className="flex flex-col p-4 space-y-5">
           <Link
             href="/cobalt"
             className="text-zinc-300 hover:text-white transition duration-300 text-left w-full pl-[2%] flex items-center"
