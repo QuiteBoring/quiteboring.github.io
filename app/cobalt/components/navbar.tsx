@@ -49,7 +49,6 @@ export default function Navbar() {
           </Link>
         </div>
 
-        {/* Hamburger Button */}
         <button
           className="md:hidden text-zinc-300 hover:text-white transition duration-300 mr-3 relative h-6 w-6 z-50"
           onClick={toggleMenu}
@@ -75,7 +74,6 @@ export default function Navbar() {
         </button>
       </div>
 
-      {/* Mobile Dropdown Menu */}
       <div
         className={`fixed top-0 left-0 right-0 w-full md:hidden bg-slate-800 backdrop-blur-sm border-b border-slate-900/25 shadow-xl transition-all duration-300 z-40 ${
           isMenuOpen
