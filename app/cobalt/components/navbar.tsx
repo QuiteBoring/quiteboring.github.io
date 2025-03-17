@@ -73,10 +73,10 @@ export default function Navbar() {
       </button>
 
       <div
-        className={`fixed left-0 right-0 w-full md:hidden bg-slate-800 backdrop-blur-sm border-b border-slate-900/25 shadow-xl transition-all duration-300 z-40 ${
+        className={`fixed left-0 right-0 w-full md:hidden bg-slate-800 backdrop-blur-sm border-t border-slate-900 shadow-xl transition-all duration-300 z-40 ${
           isMenuOpen
-            ? "opacity-100 visible top-[3.5rem]"
-            : "opacity-0 invisible top-[3.5rem] -translate-y-full"
+            ? "opacity-100 visible translate-y-0 top-[56px]"
+            : "opacity-0 invisible -translate-y-2 top-[56px]"
         }`}
       >
         <div className="flex flex-col p-4 space-y-5">
