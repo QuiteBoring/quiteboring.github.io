@@ -49,34 +49,41 @@ export default function Navbar() {
           </Link>
         </div>
 
+        {/* Hamburger Button */}
         <button
-          className="md:hidden text-zinc-300 hover:text-white transition duration-300 mr-3 relative h-6 w-6"
+          className="md:hidden text-zinc-300 hover:text-white transition duration-300 mr-3 relative h-6 w-6 z-50"
           onClick={toggleMenu}
           aria-label={isMenuOpen ? "Close menu" : "Open menu"}
         >
           <div className="absolute top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 w-full">
             <span
-              className={`block absolute h-[2px] w-full bg-current transition-transform duration-300 ${isMenuOpen ? "rotate-45" : "-translate-y-1.5"}`}
+              className={`block absolute h-[2px] w-full bg-current transition-transform duration-300 ${
+                isMenuOpen ? "rotate-45" : "-translate-y-1.5"
+              }`}
             />
             <span
-              className={`block absolute h-[2px] w-full bg-current transition-opacity duration-300 ${isMenuOpen ? "opacity-0" : ""}`}
+              className={`block absolute h-[2px] w-full bg-current transition-opacity duration-300 ${
+                isMenuOpen ? "opacity-0" : ""
+              }`}
             />
             <span
-              className={`block absolute h-[2px] w-full bg-current transition-transform duration-300 ${isMenuOpen ? "-rotate-45" : "translate-y-1.5"}`}
+              className={`block absolute h-[2px] w-full bg-current transition-transform duration-300 ${
+                isMenuOpen ? "-rotate-45" : "translate-y-1.5"
+              }`}
             />
           </div>
         </button>
       </div>
 
+      {/* Mobile Dropdown Menu */}
       <div
-        className={`fixed top-0 left-0 right-0 w-full md:hidden bg-slate-800 backdrop-blur-sm border-b border-slate-900/25 shadow-xl transition-all duration-300 ${
+        className={`fixed top-0 left-0 right-0 w-full md:hidden bg-slate-800 backdrop-blur-sm border-b border-slate-900/25 shadow-xl transition-all duration-300 z-40 ${
           isMenuOpen
             ? "opacity-100 visible translate-y-0"
             : "opacity-0 invisible -translate-y-full"
         }`}
-        style={{ marginTop: "56px" }} 
       >
-        <div className="flex flex-col p-4 space-y-5">
+        <div className="flex flex-col p-4 space-y-5 pt-16">
           <Link
             href="/cobalt"
             className="text-zinc-300 hover:text-white transition duration-300 text-left w-full pl-[2%] flex items-center"
