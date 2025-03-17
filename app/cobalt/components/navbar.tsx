@@ -83,7 +83,7 @@ export default function Navbar() {
             : "opacity-0 invisible -translate-y-full"
         }`}
       >
-        <div className="flex flex-col p-4 space-y-5">
+        <div className="flex flex-col p-4 space-y-5 pt-16">
           <Link
             href="/cobalt"
             className="text-zinc-300 hover:text-white transition duration-300 text-left w-full pl-[2%] flex items-center"
