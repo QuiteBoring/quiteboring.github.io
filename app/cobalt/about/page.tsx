@@ -40,7 +40,7 @@ export default function AboutUs() {
             <User
               name="Nathan"
               description="Lone Alpha Wolf"
-              image="https://cdn.discordapp.com/avatars/1324116012240732172/b392359380aab7fda7630060c6be2e12.png"
+              image="https://cdn.discordapp.com/avatars/1324116012240732172/3ced4d4152ec40f49d4c6a83622ee8f1.png?size=4096"
             />
           </div>
         </div>
