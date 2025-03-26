@@ -80,6 +80,13 @@ export default function Home() {
       description: "A feature rich Hypixel Skyblock QOL mod. With the intent of bringing a free and open source mod to the community.",
       utilities: ["NextJS", "Tailwind", "CSS", "Java", "Kotlin", "Mixins"],
       location: "/cobalt"
+    },
+    {
+      image: "https://static.vecteezy.com/system/resources/thumbnails/011/458/701/small_2x/fish-cartoon-icon-clipart-png.png",
+      title: "SkyFish",
+      description: "A QOL fishing mod, and my first Hypixel Skyblock related mod.",
+      utilities: ["Java", "Mixins"],
+      location: "/"
     }
   ];
 
