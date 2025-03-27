@@ -86,7 +86,7 @@ export default function Home() {
       title: "SkyFish",
       description: "A QOL fishing mod, and my first Hypixel Skyblock related mod.",
       utilities: ["Java", "Mixins"],
-      location: "/"
+      location: "https://github.com/QuiteBoring/SkyFish"
     }
   ];
 
