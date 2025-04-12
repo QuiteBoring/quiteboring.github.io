@@ -8,7 +8,7 @@ export interface UserProps {
 
 export function User(props: UserProps) {
   return (
-    <div className="bg-slate-800/40 flex items-center p-4 rounded-lg w-[300px] h-[100px] hover:shadow-lg transition-shadow duration-300">
+    <div className="  flex items-center p-4 rounded-lg w-[300px] h-[100px] hover:shadow-lg transition-shadow duration-300">
       <Image
         className="rounded-full"
         src={props.image}

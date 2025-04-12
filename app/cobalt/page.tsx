@@ -15,8 +15,8 @@ export default function Home() {
   }, []);
 
   return (
-    <div className="bg-[image:var(--radial)]">
-      <title>Cobalt</title>
+    <div className="bg-[#0e0e10]">
+      <title>C o b a l t</title>
       <div className="fixed left-1/2 transform -translate-x-1/2 w-full flex justify-center z-30">
         <Navbar />
       </div>
@@ -32,13 +32,13 @@ export default function Home() {
         </p>
         <div className="flex space-x-4">
           <a
-            className="px-8 py-3 bg-blue-950 font-light text-white rounded hover:bg-indigo-950 transition duration-300"
+            className="px-8 py-3 bg-[#18181b] font-light text-white rounded-md border border-[#2d2d32] hover:border-blue-500 hover:-translate-y-0.5 transition-all duration-200"
             href="https://www.youtube.com/watch?v=dQw4w9WgXcQ"
           >
             Download
           </a>
           <a
-            className="px-8 py-3 bg-blue-950 font-light text-white rounded hover:bg-indigo-950 transition duration-300"
+            className="px-8 py-3 bg-[#18181b] font-light text-white rounded-md border border-[#2d2d32] hover:border-blue-500 hover:-translate-y-0.5 transition-all duration-200"
             href="https://discord.gg/cobaltqol"
           >
             Discord
