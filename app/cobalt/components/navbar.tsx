@@ -1,7 +1,7 @@
 import Link from "next/link";
 import { useState } from "react";
 import { FaDiscord, FaGithub, FaWrench } from "react-icons/fa";
-import { FaHouse, FaCircleUser, FaMapLocationDot } from "react-icons/fa6";
+import { FaCircleUser, FaMapLocationDot } from "react-icons/fa6";
 
 export default function Navbar() {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -88,22 +88,6 @@ export default function Navbar() {
       >
         <div className="flex flex-col p-4 space-y-4">
           <Link
-            href="/cobalt"
-            className="text-[#a1a1aa] hover:text-white transition-colors duration-200 text-left w-full pl-[2%] flex items-center py-2"
-            onClick={closeMenu}
-          >
-            <FaHouse className="mr-3" />
-            Home
-          </Link>
-          <Link
-            href="/cobalt/roadmap"
-            className="text-[#a1a1aa] hover:text-white transition-colors duration-200 text-left w-full pl-[2%] flex items-center py-2"
-            onClick={closeMenu}
-          >
-            <FaMapLocationDot className="mr-3" />
-            Roadmap
-          </Link>
-          <Link
             href="/cobalt/about"
             className="text-[#a1a1aa] hover:text-white transition-colors duration-200 text-left w-full pl-[2%] flex items-center py-2"
             onClick={closeMenu}
@@ -118,6 +102,14 @@ export default function Navbar() {
           >
             <FaWrench className="mr-3" />
             Features
+          </Link>
+          <Link
+            href="/cobalt/roadmap"
+            className="text-[#a1a1aa] hover:text-white transition-colors duration-200 text-left w-full pl-[2%] flex items-center py-2"
+            onClick={closeMenu}
+          >
+            <FaMapLocationDot className="mr-3" />
+            Roadmap
           </Link>
           <a
             href="https://discord.gg/cobaltqol"

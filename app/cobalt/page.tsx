@@ -16,7 +16,7 @@ export default function Home() {
 
   return (
     <div className="bg-[#0e0e10]">
-      <title>C o b a l t</title>
+      <title>Cobalt</title>
       <div className="fixed left-1/2 transform -translate-x-1/2 w-full flex justify-center z-30">
         <Navbar />
       </div>

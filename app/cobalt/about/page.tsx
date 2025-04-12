@@ -8,18 +8,11 @@ export default function AboutUs() {
   const [isVisible, setIsVisible] = useState(false);
 
   useEffect(() => {
-    // Disable scrolling on mount
-    document.body.style.overflow = 'hidden';
-    
     const timer = setTimeout(() => {
       setIsVisible(true);
     }, 100);
 
-    // Re-enable scrolling on unmount
-    return () => {
-      document.body.style.overflow = '';
-      clearTimeout(timer);
-    };
+    return () => clearTimeout(timer);
   }, []);
 
   return (
@@ -40,9 +33,6 @@ export default function AboutUs() {
             We believe everyone should have access to free QOL scripts. Open source is an incredible concept that we deeply admire and support. We are passionate about giving back to the community.
           </p>
 
-          <div className="w-[70%] mt-2 mb-4 h-px bg-gray-400 opacity-50"></div>
-
-          <h1 className="text-3xl font-normal text-white mb-3">Developers</h1>
           <div className="flex flex-wrap justify-center gap-4">
             <div className="bg-[#18181b] rounded-md p-3 border border-[#2d2d32] hover:border-blue-500 hover:-translate-y-0.5 transition-all duration-200">
               <User
